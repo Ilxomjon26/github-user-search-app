@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  
+  <title>Frontend Mentor | GitHub user search app</title>
+</head>
+<body>
+  <div class="card1">
+    <p class="p1 pp">devfinder</p>
+    <div class="card1" id="oy">
+      <p class="p2 pp">Dark</p>
+      <img src="./assets/icon-moon.svg" alt="" class="img1">
+    </div>
+    <div class="card1" id="quyosh">
+      <p class="p2 pp pp3">Light</p>
+      <img src="./assets/icon-sun.svg" alt="" class="img1">
+    </div>  
+  </div>
+  <img src="./assets/icon-search.svg" alt="" class="img2" id="button1">
+  <a href="#" class="lupa" id="button">Search</a>
+  <input type="text" placeholder="Search GitHub username..." class="card2 rang " id="imput">
+  <!-- <div class="card2">
+    
+    <p class="p3">Search GitHub username...</p>
+    
+  </div> -->
+  <div id="content"></div>
+  
+
+  
+<script>
+  // const searchedword=search.value
+  const button=document.getElementById("button")
+  const button1=document.getElementById("button")
+  const handleSearch=()=>{
+    
+    let search=document.getElementById("imput").value
+    
+    let word=search.split(" ").join("")
+    
+    fetch("https://api.github.com/users/" + word)
+    .then(response=>response.json())
+    .then((data)=>{
+      document.getElementById("content").innerHTML=`
+      <div class="card3 rang" >
+          <div class="card1">
+            <img src="${data.avatar_url}" alt="" class="img3">
+            <div>
+              <div class="card1">
+                <div>
+                  <p class="p4 pp" id="name">${data.name} </p>
+                  <a class="p5" href="https://instagram.com/ilxomjon_officia1" id="user">@${data.login}</a>
+                </div>
+                <p class="p7 pp" id="sana">${"Joined "+data.created_at[0]+data.created_at[1]+data.created_at[2]+data.created_at[3]+"."+data.created_at[5]+data.created_at[6]+"."+data.created_at[8]+data.created_at[9]}</p>
+              </div>
+              
+              <p class="p6 pp">${data.bio}</p>
+
+            </div>
+            
+          </div>
+          <div class="div1">
+            <div class="card1">
+              <p class="p0 pp">Repos</p>
+              <p class="p0 p01 pp">Followers</p>
+              <p class="p0 p02 pp">Following</p>
+            </div>
+            <div class="card1">
+              <p class="r pp">${data.public_repos}</p>
+              <p class="r r1 pp">${data.followers}</p>
+              <p class="r r2 pp">${data.following}</p>
+            </div>
+          </div>
+          <div class="oxirgi">
+            <div class="oxirgi1">
+              <div class="oxirgi">
+                <img src="./assets/icon-location.svg" alt="">
+                <p class="san pp">${data.location}</p>
+              </div>
+              <div class="oxirgi pp0">
+                <img src="./assets/icon-website.svg" alt="">
+                <a href="#" class="san pp">${data.blog}</a>
+              </div>
+            </div>
+            <div class="oxirgi2">
+              <div class="oxirgi san1">
+                <img src="./assets/icon-twitter.svg" alt="">
+                <p class="san pp">${data.twitter_username}</p>
+              </div>
+              <div class="oxirgi pp0">
+                <img src="./assets/icon-company.svg" alt="">
+                <p class="san pp">@github</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      `
+        // console.log(data)
+    })
+  }
+  button.addEventListener("click",handleSearch)
+  button1.addEventListener("click",handleSearch)
+</script> 
+</body>
+</html>

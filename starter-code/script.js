@@ -1,0 +1,21 @@
+$(document).ready(function(){
+    $("#quyosh").hide()
+    $("#oy").click(function(){
+        $("body").css("background" , "#141D2F")
+        $("#oy").toggle()
+        $("#quyosh").toggle()
+        $(".pp").css("color" , "#FFFFFF")
+        $(".div1").css("background" , "#141D2F")
+        $(".rang").css("background" , " #1E2A47")
+        $(".card2").css("color","#FFFFFF")
+    })
+    $("#quyosh").click(function(){
+        $("body").css("background" , "#F6F8FF")
+        $("#oy").toggle()
+        $("#quyosh").toggle()
+        $(".pp").css("color" , "#222731")
+        $(".div1").css("background" , "#F6F8FF")
+        $(".rang").css("background" , " #FEFEFE")
+        $(".card2").css("color","#222731")
+    })
+})

@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Bai+Jamjuree:wght@400;600&family=Josefin+Sans:wght@300&family=Montserrat:wght@700&family=Open+Sans&family=Raleway:wght@700&family=Space+Grotesk:wght@500&family=Space+Mono:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 1440px;
+height: 900px;
+
+background: #F6F8FF;
+}
+.card1{
+    display: flex;
+}
+
+.p1{
+    height: 39px;
+margin-top: 144px;
+margin-left: 355px;
+
+font-family: 'Space Mono';
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 39px;
+/* identical to box height */
+
+
+color: #222731;
+}
+.p2{
+    height: 19px;
+margin-top: 153px;
+margin-left: 526px;
+
+font-family: 'Space Mono';
+font-style: normal;
+font-weight: 700;
+font-size: 13px;
+line-height: 19px;
+text-align: right;
+letter-spacing: 2.5px;
+
+color: #697C9A;
+}
+.img1{
+    width: 20px;
+height: 20px;
+margin-top: 153px;
+margin-left: 16px;
+}
+.card2{
+    border: none;
+    display: flex;
+    background: #FEFEFE;
+box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+border-radius: 15px;
+width: 730px;
+height: 69px;
+margin-top: 36px;
+margin-left: 355px;
+padding-left: 80px;
+font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height, or 139% */
+    
+    
+    /* color: #4B6A9B; */
+}
+.img2{
+    width: 24.06px;
+height: 24px;
+position: absolute;
+left: 387px;
+top: 241px;
+}
+.p3{
+    height: 25px;
+    margin-top: 22px;
+    margin-left: 23.94px;
+    
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height, or 139% */
+    
+    
+    color: #4B6A9B;
+}
+.lupa{
+    background: #0079FF;
+border-radius: 10px;
+width: 106px;
+height: 50px;
+position: absolute;
+left: 969px;
+top: 227.5px;
+font-family: 'Space Mono';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+text-decoration: none;
+justify-content: center;
+align-items: center;
+display: flex;
+color: #FFFFFF;
+}
+.card3{
+    
+    width: 730px;
+height: 419px;
+margin-top: 24px;
+margin-left: 355px;
+background: #FEFEFE;
+box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+border-radius: 15px;
+}
+.img3{
+    width: 117px;
+    height: 117px;
+    margin-top: 48px;
+    margin-left: 48px;
+    border-radius: 50%;
+}
+.p4{
+    height: 39px;
+margin-top: 44px;
+margin-left: 37px;
+
+font-family: 'Space Mono';
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 39px;
+/* identical to box height */
+
+
+color: #2B3442;
+}
+.p5{
+    height: 24px;
+margin-top: 2px;
+margin-left: 37px;
+
+font-family: 'Space Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+
+color: #0079FF;
+}
+.p6{
+    margin-left: 37px;
+    height: 25px;
+margin-top: 20px;
+
+font-family: 'Space Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 25px;
+/* identical to box height, or 167% */
+
+
+color: #4B6A9B;
+
+mix-blend-mode: normal;
+opacity: 0.75;
+}
+.p7{
+    height: 22px;
+margin-top: 52px;
+margin-left: 138px;
+
+font-family: 'Space Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 22px;
+text-align: right;
+
+color: #697C9A;
+}
+.pp3{
+margin-left: 513px;
+}
+.div1{
+    width: 480px;
+height: 85px;
+background: #F6F8FF;
+border-radius: 10px;
+margin-top: 32px;
+margin-left: 202px;
+}
+.p0{
+    height: 19px;
+margin-top: 15px;
+margin-left: 32px;
+
+font-family: 'Space Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 19px;
+
+color: #4B6A9B;
+}
+.p01{
+    margin-left: 99px;
+}
+.p02{
+    margin-left: 82px;
+}
+.r{
+    width: 40px;
+    height: 33px;
+margin-top: 2px;
+margin-left: 32px;
+font-family: 'Space Mono';
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 33px;
+/* identical to box height */
+
+text-transform: uppercase;
+
+color: #2B3442;
+}
+.r1{
+    width: 72px;
+    margin-left: 99px;
+}
+.r2{
+    width: 72px;
+    margin-left: 82px;
+}
+.oxirgi{
+    display: flex;
+}
+.oxirgi1{
+    margin-top: 37px;
+    margin-left: 202px;
+}
+.oxirgi2{
+    margin-top: 37px;
+    margin-left: 62px;
+}
+.pp0{
+    margin-top: 15px;
+}
+.san{
+    height: 22px;
+margin-left: 19.12px;
+
+font-family: 'Space Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 22px;
+
+color: #4B6A9B;
+}
+.san1{
+    mix-blend-mode: normal;
+opacity: 0.5;
+}
+
+
+
+
+
+
+
